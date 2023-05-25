@@ -11,13 +11,14 @@ function App() {
         <button>Agregar tarea nueva</button>
       </form>
 
-      <div>
-        <p>Aquí irá la tarea que añada el usuario</p>
-        <button>Botón para editar tarea</button>
-        <button>Botón para marcar como "tarea hecha"</button>
-        <button>Botón para borrar tarea</button>
-      </div>
-
+      <ul>
+        <li>
+          <p></p>
+          <button>editar</button>
+          <button>checked</button>
+          <button>borrar</button>
+        </li>
+      </ul>
     </>
   );
 }
