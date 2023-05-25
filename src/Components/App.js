@@ -11,10 +11,14 @@ function App() {
         <button>Agregar tarea nueva</button>
       </form>
 
-      <div>
-
-      </div>
-
+      <ul>
+        <li>
+          <p></p>
+          <button>editar</button>
+          <button>checked</button>
+          <button>borrar</button>
+        </li>
+      </ul>
     </>
   );
 }
