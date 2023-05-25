@@ -12,7 +12,10 @@ function App() {
       </form>
 
       <div>
-
+        <p>Aquí irá la tarea que añada el usuario</p>
+        <button>Botón para editar tarea</button>
+        <button>Botón para marcar como "tarea hecha"</button>
+        <button>Botón para borrar tarea</button>
       </div>
 
     </>
