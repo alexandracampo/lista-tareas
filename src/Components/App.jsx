@@ -9,6 +9,7 @@ function App() {
 
   const handleInputTask = (ev) => {
     setInputTask(ev.target.value);
+
   }
 
   const handleBtnNewTask = (ev) => {
@@ -24,7 +25,7 @@ function App() {
       <h1>To-do List 📋</h1>
 
       <form>
-        <input onChange={handleInputTask} type='text' placeholder='Añade aquí tu tarea'></input>
+        <input value={inputTask} onChange={handleInputTask} type='text' placeholder='Añade aquí tu tarea'></input>
         <button onClick={handleBtnNewTask}>Agregar tarea nueva</button>
       </form>
 
