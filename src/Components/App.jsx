@@ -2,6 +2,7 @@ import '../styles/App.scss';
 import React, { useState } from 'react';
 import ListTasks from './ListTasks';
 import imageHeader from '../images/img-task2.png'
+import { FaBeer } from 'react-icons/fa'
 
 function App() {
 
