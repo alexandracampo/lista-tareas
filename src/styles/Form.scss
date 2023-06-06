@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 
   &__input {
     height: 2rem;
@@ -31,6 +32,19 @@
 
     &:hover {
       transform: scale(1.1, 1.1);
+    }
+  }
+
+  .container-alert {
+    display: contents;
+
+    .alert-max-length {
+      font-size: 10px;
+      width: 10rem;
+      color: rgb(240, 149, 149);
+      position: relative;
+      top: 2.5rem;
+      left: -13.6rem;
     }
   }
 }

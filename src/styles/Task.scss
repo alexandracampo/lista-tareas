@@ -35,6 +35,10 @@
     color: black;
   }
 
+  .text--cross {
+    text-decoration: line-through;
+  }
+
   &__remove {
     border-radius: 50%;
     width: 2rem;

@@ -7,7 +7,6 @@ import Form from './Form';
 function App() {
 
   const [tasksList, setTasksList] = useState([]);
-  console.log(tasksList)
 
   return (
     <>

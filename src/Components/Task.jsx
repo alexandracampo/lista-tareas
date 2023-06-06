@@ -15,6 +15,7 @@ function Task({ tasksList }) {
         }));
     }
 
+
     return (
         <>
             {tasksList.map((task, index) => (
@@ -27,7 +28,7 @@ function Task({ tasksList }) {
                         className={`${checkedTasks[index] ? 'task__checked' : 'task__checkbox'}`}
                     >
                     </input>
-                    <p className='task__text'>{task}</p>
+                    <p className={`${checkedTasks[index] ? 'task__text text--cross' : 'task__text'}`}>{task}</p>
                     <button className='task__remove'>
                         <FcFullTrash className='img-trash' />
                     </button>
