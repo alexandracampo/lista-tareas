@@ -16,6 +16,7 @@ function Form({ setTasksList, tasksList }) {
             setInputTask(ev.target.value);
             setAlert('El texto no puede tener más de 15 caracteres ni estar vacío')
         }
+        console.log('Jarvis example');
     }
 
     // Función manejadora del botón de "agregar tarea"
