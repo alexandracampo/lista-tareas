@@ -9,28 +9,24 @@ function Form({ setTasksList, tasksList }) {
 
     // Función manejadora de los cambios en el input de texto
     const handleInputTask = (ev) => {
-        if (inputTask.trim().length <= 15 || inputTask === '') {
-            setInputTask(ev.target.value);
-            setAlert('');
-        } else {
-            setInputTask(ev.target.value);
-            setAlert('El texto no puede tener más de 15 caracteres ni estar vacío')
-        }
+        setInputTask(ev.target.value);
+
+        console.log(ev.target.value.trim().length)
     }
 
     // Función manejadora del botón de "agregar tarea"
     const handleBtnNewTask = (ev) => {
         ev.preventDefault();
-        if (inputTask.trim() !== '' && inputTask.length <= 15) {
+        if (inputTask.trim().length === 0) {
+            setAlert('El texto no puede estar vacío');
+        } else if (inputTask.trim().length > 15) {
+            setAlert('El texto no puede tener más de 15 caracteres');
+        } else {
             setTasksList([...tasksList, inputTask]);
             setInputTask('');
             setAlert('');
-        } else {
-            setAlert('El texto no puede tener más de 15 caracteres ni estar vacío');
         }
     }
-
-    console.log(inputTask.length)
 
     return (
         <>
