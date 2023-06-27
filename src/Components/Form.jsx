@@ -42,7 +42,7 @@ function Form({ setTasksList, tasksList }) {
                 <button className='form__button' onClick={handleBtnNewTask}>+</button>
 
                 <div className='container-alert'>
-                    <p className='alert-max-length'>{alert}</p>
+                    <p className='alert-input'>{alert}</p>
                 </div>
             </form>
 
