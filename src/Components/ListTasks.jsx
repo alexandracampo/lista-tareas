@@ -3,7 +3,7 @@ import '../styles/ListTasks.scss';
 import React, { useState } from 'react';
 import Task from './Task';
 
-function ListTasks({ tasksList }) {
+function ListTasks({ tasksList, modal, setModal }) {
 
   return (
     <div className='list-section'>
@@ -11,6 +11,8 @@ function ListTasks({ tasksList }) {
 
         <Task
           tasksList={tasksList}
+          modal={modal}
+          setModal={setModal}
         />
 
       </ul>

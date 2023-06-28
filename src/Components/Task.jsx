@@ -3,10 +3,10 @@ import '../styles/Task.scss';
 import React, { useState } from 'react';
 import { FcFullTrash } from "react-icons/fc";
 
-function Task({ tasksList }) {
+function Task({ tasksList, modal, setModal }) {
 
     const [checkedTasks, setCheckedTasks] = useState({});
-    console.log(checkedTasks)
+
 
     const handleCheckedTask = (ev) => {
         setCheckedTasks(prevList => ({
@@ -15,6 +15,10 @@ function Task({ tasksList }) {
         }));
     }
 
+    const handleDeleteBtn = (ev) => {
+        ev.preventDefault();
+        setModal(!modal)
+    }
 
     return (
         <>
@@ -29,11 +33,15 @@ function Task({ tasksList }) {
                     >
                     </input>
                     <p className={`${checkedTasks[index] ? 'task__text text--cross' : 'task__text'}`}>{task}</p>
-                    <button className='task__remove'>
+                    <button
+                        className='task__remove'
+                        onClick={handleDeleteBtn}
+                    >
                         <FcFullTrash className='img-trash' />
                     </button>
                 </li>
             ))}
+
         </>
     );
 }

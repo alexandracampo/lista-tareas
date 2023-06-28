@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: center;
+
+  .modal {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+    width: 25rem;
+    height: 10rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 3px;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes animarsuperior {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

@@ -3,19 +3,32 @@ import React, { useState } from 'react';
 import Header from './Header';
 import ListTasks from './ListTasks';
 import Form from './Form';
+import Modal from './Modal';
 
 function App() {
 
   const [tasksList, setTasksList] = useState([]);
+  const [modal, setModal] = useState(false);
 
   return (
-    <>
-      <Header />
+    <div  >
 
-      <Form tasksList={tasksList} setTasksList={setTasksList} />
+      <div className={modal ? 'app-modal-active' : ''}>
+        <Header />
+        <Form tasksList={tasksList} setTasksList={setTasksList} />
+        <ListTasks
+          tasksList={tasksList}
+          modal={modal}
+          setModal={setModal} />
+      </div>
 
-      <ListTasks tasksList={tasksList} />
-    </>
+      <div className='container-modal'>
+        <Modal
+          modal={modal}
+          setModal={setModal} />
+      </div>
+
+    </div>
   );
 }
 
