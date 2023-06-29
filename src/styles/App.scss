@@ -12,5 +12,5 @@ $font-family: "Montserrat", sans-serif;
 .app-modal-active {
   background-color: rgba(44, 44, 44, 0.589);
   filter: blur(4px);
-  //spointer-events: none;
+  pointer-events: none;
 }
