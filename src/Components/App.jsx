@@ -15,17 +15,25 @@ function App() {
 
       <div className={modal ? 'app-modal-active' : ''}>
         <Header />
-        <Form tasksList={tasksList} setTasksList={setTasksList} />
+        <Form
+          tasksList={tasksList}
+          setTasksList={setTasksList} />
         <ListTasks
           tasksList={tasksList}
           modal={modal}
-          setModal={setModal} />
+          setModal={setModal}
+          setTasksList={setTasksList}
+        />
       </div>
 
       <div className='container-modal'>
         <Modal
           modal={modal}
-          setModal={setModal} />
+          setModal={setModal}
+          tasksList={tasksList}
+          setTasksList={setTasksList}
+        />
+
       </div>
 
     </div>

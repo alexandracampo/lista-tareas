@@ -1,7 +1,17 @@
 import '../styles/Modal.scss';
 
 
-function Modal({ modal, setModal }) {
+function Modal({ modal, setModal, taskList, setTaskList }) {
+
+    const handleCloseModal = () => {
+        if (modal) {
+            setModal(false)
+        }
+    }
+
+    const handleModalDelete = (ev) => {
+
+    }
 
     return (
         <>
@@ -10,8 +20,8 @@ function Modal({ modal, setModal }) {
                     <div className="modal__text">
                         <h3>¿Seguro que quieres borrar esta tarea?</h3>
                         <div className="modal__buttons">
-                            <button>Sí</button>
-                            <button>No</button>
+                            <button onClick={handleModalDelete}>Sí</button>
+                            <button onClick={handleCloseModal}>No</button>
                         </div>
                     </div>
                 </div>
