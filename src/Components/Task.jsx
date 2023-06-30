@@ -25,16 +25,16 @@ function Task({ tasksList, setTasksList, modal, setModal }) {
         }
     }
 
-    const confirm = () => {
-        // Abrir modal
-        setModal(!modal);
-        // ESPERAR RESPUESTA
-        //
-        // Cerrar modal
-        //
-        // Devolver respuesta
-        return true;
-    }
+    /*   const confirm = () => {
+          // Abrir modal
+          setModal(!modal);
+          // ESPERAR RESPUESTA
+          //
+          // Cerrar modal
+          //
+          // Devolver respuesta
+          return true;
+      } */
 
     return (
         <>
