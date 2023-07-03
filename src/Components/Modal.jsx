@@ -4,9 +4,7 @@ import '../styles/Modal.scss';
 function Modal({ modal, setModal, taskList, setTaskList }) {
 
     const handleCloseModal = () => {
-        if (modal) {
-            setModal(false)
-        }
+        setModal(false)
     }
 
     const handleModalDelete = (ev) => {
