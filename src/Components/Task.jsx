@@ -18,7 +18,7 @@ function Task({ tasksList, setTasksList, modal, setModal }) {
 
     const handleTrashButton = (ev, task) => {
         ev.preventDefault();
-        //setModal(!modal)
+        //setModal(true)
         if (window.confirm('¿Seguro que quieres eliminar la tarea?')) {
             setTasksList(
                 tasksList.filter(t => t !== task));
