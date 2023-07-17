@@ -19,8 +19,8 @@ function Form({ setTasksList, tasksList }) {
         ev.preventDefault();
         if (inputTask.trim().length === 0) {
             setAlert('El texto no puede estar vacío');
-        } else if (inputTask.trim().length > 15) {
-            setAlert('El texto no puede tener más de 15 caracteres');
+        } else if (inputTask.trim().length > 20) {
+            setAlert('El texto no puede tener más de 20 caracteres');
         } else {
             setTasksList([...tasksList, inputTask]);
             setInputTask('');
