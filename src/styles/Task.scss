@@ -31,6 +31,10 @@
     margin-left: 1rem;
     border: 2px solid grey;
     background-color: greenyellow;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__text {
