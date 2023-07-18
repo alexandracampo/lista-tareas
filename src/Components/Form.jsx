@@ -40,12 +40,11 @@ function Form({ setTasksList, tasksList }) {
                 >
                 </input>
                 <button className='form__button' onClick={handleBtnNewTask}>+</button>
-
-                <div className='container-alert'>
-                    <p className='alert-message'>{alert}</p>
-                </div>
             </form>
 
+            <div className='container-alert'>
+                <p className='alert-message'>{alert}</p>
+            </div>
 
         </>
     )
