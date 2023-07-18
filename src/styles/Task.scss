@@ -17,6 +17,10 @@
     margin-left: 1rem;
     background-color: white;
     border: 2px solid grey;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__checked {
