@@ -1,0 +1,15 @@
+[
+  {
+    "user_id": 1,
+    "task_list": [
+      "Limpiar suelo",
+      "Fregar platos",
+      "Poner lavadora",
+      "Revisar aire acc."
+    ]
+  },
+  {
+    "user_id": 2,
+    "task_list": ["cocinar", "pescar", "colgar una estanteria"]
+  }
+]
