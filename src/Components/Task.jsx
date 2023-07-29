@@ -2,6 +2,8 @@ import '../styles/App.scss';
 import '../styles/Task.scss';
 import React, { useState } from 'react';
 import { FcFullTrash } from "react-icons/fc";
+import Modal from './Modal';
+
 
 function Task({ tasksList, setTasksList, modal, setModal }) {
 
@@ -16,25 +18,27 @@ function Task({ tasksList, setTasksList, modal, setModal }) {
         }));
     }
 
-    const handleTrashButton = (ev, task) => {
+    const handleTrashButton = (ev) => {
         ev.preventDefault();
-        //setModal(true)
-        if (window.confirm('¿Seguro que quieres eliminar la tarea?')) {
-            setTasksList(
-                tasksList.filter(t => t !== task));
-        }
+        /*  //setModal(true)
+         if (window.confirm('¿Seguro que quieres eliminar la tarea?')) {
+             setTasksList(
+                 tasksList.filter(t => t !== task));
+         } */
+        setModal(true)
+
     }
 
-    /*   const confirm = () => {
-          // Abrir modal
-          setModal(!modal);
-          // ESPERAR RESPUESTA
-          //
-          // Cerrar modal
-          //
-          // Devolver respuesta
-          return true;
-      } */
+    /*  const confirm = () => {
+         // Abrir modal
+         setModal(!modal);
+         // ESPERAR RESPUESTA
+         //
+         // Cerrar modal
+         //
+         // Devolver respuesta
+         return true;
+     } */
 
     return (
         <>

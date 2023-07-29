@@ -36,6 +36,7 @@ function App() {
       </div>
 
       <div className='container-modal'>
+
         <Modal
           modal={modal}
           setModal={setModal}
